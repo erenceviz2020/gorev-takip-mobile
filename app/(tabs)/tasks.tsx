@@ -289,11 +289,7 @@ export default function TasksScreen() {
         ItemSeparatorComponent={() => <View style={{ height: 12 }} />}
       />
 
-      {role === "admin" && (
-        <TouchableOpacity activeOpacity={0.9} style={[styles.fab, { backgroundColor: colors.primary }]} onPress={() => {}}>
-          <Ionicons name="add" size={26} color={colors.white} />
-        </TouchableOpacity>
-      )}
+      
     </SafeAreaView>
   );
 }
