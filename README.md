@@ -1,50 +1,194 @@
-# Welcome to your Expo app 👋
+# 📋 Görev Takip Uygulaması | Task Management Mobile App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Modern, rol bazlı ve tema destekli bir **mobil görev yönetim uygulaması**.  
+Bu proje, **React Native + TypeScript** kullanılarak geliştirilmiştir ve gerçek hayattaki iş akışlarını simüle eder.
 
-## Get started
+A modern **task management mobile application** built with **React Native and TypeScript**, designed to simulate real-world work processes with role-based access and theme support.
 
-1. Install dependencies
+---
 
-   ```bash
-   npm install
-   ```
+## 🇹🇷 Türkçe Açıklama
 
-2. Start the app
+### 🎯 Projenin Amacı
+Bu uygulama;
+- Görevlerin yönetilmesi
+- Çalışanlara görev atanması
+- Görevlerin durumlarının takip edilmesi
+- Kullanıcı rollerine göre farklı yetkiler sunulması  
 
-   ```bash
-   npx expo start
-   ```
+amaçlarıyla geliştirilmiştir.
 
-In the output, you'll find options to open the app in a
+Proje, **modern mobil UI/UX**, **temiz kod mimarisi** ve **ölçeklenebilir yapı** göstermek için hazırlanmıştır.
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+---
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+### 👤 Kullanıcı Rolleri
 
-## Get a fresh project
+#### 👑 Yönetici (Admin)
+- Tüm görevleri görüntüleyebilir
+- Yeni görev oluşturabilir
+- Görevleri çalışanlara atayabilir
+- Görev istatistiklerini dashboard üzerinden görebilir
 
-When you're ready, run:
+#### 👨‍💼 Çalışan (Employee)
+- Sadece kendisine atanmış görevleri görebilir
+- Görev detaylarını inceleyebilir
+- Bildirimleri takip edebilir
+
+---
+
+### 🌗 Tema Desteği
+- Dark Mode & Light Mode
+- Tema değişimi anlık olarak tüm ekranlara uygulanır
+- iOS ve Android uyumludur
+
+---
+
+### 🧭 Uygulama Ekranları
+
+#### 🏠 Dashboard
+- Toplam görev sayısı
+- Beklemede / Devam / Tamamlanan görevler
+- Tamamlanma oranı
+- Son görevler listesi
+- Admin kullanıcılar için **“+” butonu** ile görev oluşturma
+
+#### ✅ Görevler
+- Görev listesi
+- Arama özelliği
+- Duruma göre filtreleme
+- Öncelik göstergeleri (Yüksek / Orta / Düşük)
+
+#### 🔔 Bildirimler
+- Yeni görev atamaları
+- Görev durumu değişiklikleri
+- Bildirime tıklayınca detay sayfasına geçiş
+
+#### 📄 Görev Detayı
+- Görev başlığı
+- Durum ve öncelik
+- Açıklama
+- Atanan kişi
+- Lokasyon, ekip ve bitiş tarihi
+
+---
+
+### ➕ Görev Oluşturma (Admin)
+Yönetici kullanıcılar;
+- Görev başlığı
+- Açıklama
+- Çalışan seçimi
+- Kategori seçimi (Saha, Bakım, Depo, Operasyon)
+- Lokasyon
+- Ekip
+- Öncelik
+- Bitiş tarihi  
+
+bilgilerini girerek yeni görev oluşturabilir.
+
+---
+
+### 🛠️ Kullanılan Teknolojiler
+- React Native
+- Expo Router
+- TypeScript
+- Context API
+- @expo/vector-icons
+- @react-native-community/datetimepicker
+
+---
+
+## 🇬🇧 English Description
+
+### 🎯 Project Purpose
+This application is developed to:
+- Manage tasks efficiently
+- Assign tasks to employees
+- Track task statuses
+- Provide role-based access control  
+
+The project demonstrates **modern mobile UI/UX**, **clean architecture**, and **scalable state management**.
+
+---
+
+### 👤 User Roles
+
+#### 👑 Admin
+- View all tasks
+- Create new tasks
+- Assign tasks to employees
+- View task statistics on the dashboard
+
+#### 👨‍💼 Employee
+- View only assigned tasks
+- See task details
+- Receive notifications
+
+---
+
+### 🌗 Theme Support
+- Dark Mode & Light Mode
+- Theme changes apply instantly across the entire app
+- Compatible with both iOS and Android
+
+---
+
+### 🧭 Application Screens
+
+#### 🏠 Dashboard
+- Total task count
+- Pending / In Progress / Completed tasks
+- Completion rate
+- Recent tasks
+- Admin-only **“+” button** for task creation
+
+#### ✅ Tasks
+- Task list
+- Search functionality
+- Status-based filtering
+- Priority indicators (High / Medium / Low)
+
+#### 🔔 Notifications
+- Task assignment notifications
+- Status update notifications
+- Navigation to detail screen on tap
+
+#### 📄 Task Detail
+- Task title
+- Status & priority badges
+- Description
+- Assigned employee
+- Location, team, and due date
+
+---
+
+### ➕ Task Creation (Admin)
+Admins can create tasks by selecting:
+- Task title
+- Description
+- Employee
+- Category (Field, Maintenance, Warehouse, Operations)
+- Location
+- Team
+- Priority
+- Due date
+
+---
+
+### 🛠️ Technologies Used
+- React Native
+- Expo Router
+- TypeScript
+- Context API (State Management)
+- Vector Icons
+- Date Picker
+
+---
+
+## ▶️ Installation & Run
 
 ```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+git clone https://github.com/username/task-management-app.git
+cd task-management-app
+npm install
+npx expo start
